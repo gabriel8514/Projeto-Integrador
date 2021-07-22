@@ -4,9 +4,9 @@ use ecommerce;
 
 CREATE TABLE `Categoria` (
 	`id` bigint NOT NULL AUTO_INCREMENT,
-	`eolica` varchar(300) NOT NULL,
-	`solar` varchar(300) NOT NULL,
-	`biogas` varchar(300) NOT NULL,
+	`tipo` varchar(300) NOT NULL,
+	`descricao_categoria` varchar(300) NOT NULL,
+	`palavra_chave` varchar(300) NOT NULL,
 	PRIMARY KEY (`id`)
 );
 
@@ -15,6 +15,7 @@ CREATE TABLE `Usuario` (
 	`nome_completo` varchar(500) NOT NULL,
 	`email` varchar(500) NOT NULL,
 	`senha` varchar(500) NOT NULL,
+	`adm` BOOLEAN NOT NULL,
 	PRIMARY KEY (`id`)
 );
 
@@ -31,4 +32,5 @@ CREATE TABLE `Produto` (
 ALTER TABLE `Produto` ADD CONSTRAINT `Produto_fk0` FOREIGN KEY (`categoria_id`) REFERENCES `Categoria`(`id`);
 
 select * from produto;
-
+select * from categoria;
+select * from usuario; 
