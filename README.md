@@ -1,2 +1,2 @@
 # Projeto-Integrador
-Projeto integrador Generation. 
+Projeto integrador grupo 6 Generation Turma 26.   
